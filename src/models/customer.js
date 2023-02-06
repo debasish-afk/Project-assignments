@@ -32,6 +32,10 @@ const customerSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    isDeleted:{
+      type:Boolean,
+      default:true
+    }
   },
   { timestamps: true }
 );
