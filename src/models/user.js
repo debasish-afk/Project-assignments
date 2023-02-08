@@ -8,7 +8,8 @@ const userSchema=new mongoose.Schema({
     },
     emailId:{
         type:String,
-        requires:true
+        requires:true,
+        unique:true
     },
     password:{
         type:String,
@@ -16,7 +17,8 @@ const userSchema=new mongoose.Schema({
     },
     PhoneNo:{
         type:String,
-        requires:true
+        requires:true,
+        unique:true
     },
     isDeleted:{
         type:Boolean,
